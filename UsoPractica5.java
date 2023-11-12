@@ -6,8 +6,8 @@
  * - Terminar la clase UsoSudoku
  * 
  * Matriz5x5:
- * - Crear un constructor que no haga nada
- * - Crear el metodo aleatorizar que rellene la matriz con valores del -9 al 9
+ * - Crear un constructor que cree una matriz aleatoria con valores del -9 al 9
+ * - Crear un metodo setMatriz(int[][] input) que cambie el arreglo interno.
  * - Crear el metodo estatico que retorna una matriz: sumaMatrices(Matriz5x5
  * sumando, Matriz5x5 sumando2)
  * - Crear el metodo estatico que retorna una matriz: multipMatrices(Matriz5x5
