@@ -5,17 +5,6 @@
  * - Terminar la clase UsoMatrices
  * - Terminar la clase UsoSudoku
  * 
- * Matriz5x5:
- * - Crear un constructor que cree una matriz aleatoria con valores del -9 al 9
- * - Crear un metodo setMatriz(int[][] input) que cambie el arreglo interno.
- * - Crear el metodo estatico que retorna una matriz: sumaMatrices(Matriz5x5
- * sumando, Matriz5x5 sumando2)
- * - Crear el metodo estatico que retorna una matriz: multipMatrices(Matriz5x5
- * multip, Matriz5x5 multip2)
- * - Crear el metodo transponer() que transpone la matriz en donde se ejecute.
- * - Crear el metodo estatico multipMatrices(Matriz5x5 multip, int escalar) que
- * retorna una matriz
- * 
  * UsoMatrices:
  * - Crear el menu con las opciones:
  * 1. Sumar matrices
