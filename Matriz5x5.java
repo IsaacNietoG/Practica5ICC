@@ -112,7 +112,7 @@ public class Matriz5x5 {
             for(int j = 0; j<factor1.matriz.length; j++){
                 int subresultado=0;
                 for(int k = 0; k<factor1.matriz.length; k++){
-                    subresultado += factor1.matriz[k][j] * factor2.matriz[i][k];
+                    subresultado += (factor1.matriz[i][k] * factor2.matriz[k][j]);
                 }
                 resultado.matriz[i][j] = subresultado;
             }
@@ -125,12 +125,13 @@ public class Matriz5x5 {
            Transpone el arreglo interno de la instancia en donde se ejecute. Esto
            lo logra invirtiendo las coordenadas del arreglo.
          */
-        int[][] temp = this.matriz;
+        int[][] temp = new int[5][5];
         for(int i = 0; i<matriz.length; i++){
             for(int j = 0; j<matriz.length; j++){
-                matriz[i][j] = temp[j][i];
+                temp[j][i] = matriz[i][j];
             }
         }
+        matriz = temp;
     }
 
     public static Matriz5x5 multipMatrices(Matriz5x5 factor1, int factor2){

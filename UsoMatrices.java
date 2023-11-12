@@ -1,5 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Random;
 public class UsoMatrices {
     
     public static void main(String[] args){
@@ -35,8 +36,10 @@ public class UsoMatrices {
                 sumador();
                 break;
             case 2:
+                multiplicador();
                 break;
             case 3:
+                transponedor();
                 break;
             case 4:
                 break;
@@ -65,4 +68,41 @@ public class UsoMatrices {
         Matriz5x5 resultado = Matriz5x5.sumaMatrices(sumando1, sumando2);
         System.out.println(resultado);
     }
+
+    public static void multiplicador(){
+        Matriz5x5 producto1 = new Matriz5x5(1);
+        Matriz5x5 producto2 = new Matriz5x5(1);
+
+        System.out.println("---Matrices a multiplicar---");
+        System.out.println("");
+        System.out.println(producto1);
+        System.out.println();
+        System.out.println(producto2);
+        System.out.println("------------");
+        System.out.println("Resultado:");
+        System.out.println();
+        Matriz5x5 resultado = Matriz5x5.multipMatrices(producto1, producto2);
+        System.out.println(resultado);
+    }
+
+    public static void transponedor(){
+        Matriz5x5 transponible = new Matriz5x5(1);
+
+        System.out.println("---Matriz a transponer---");
+        System.out.println("");
+        System.out.println(transponible);
+        System.out.println();
+        System.out.println("-----------");
+        System.out.println("Resultado");
+        System.out.println();
+        transponible.transponer();
+        System.out.println(transponible);
+    }
+
+    public static void multiplicadorEscalar(){
+        Matriz5x5 matriz5x5 = new Matriz5x5(1);
+        Random random = new Random();
+        int escalar = random.nextInt(4)+3;
+    }
+
 }
