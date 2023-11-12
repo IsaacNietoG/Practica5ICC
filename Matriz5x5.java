@@ -48,6 +48,8 @@ public class Matriz5x5 {
     public String toString(){
         /**
            Retorna una String de varias lineas que representa la matriz.
+           Cuenta con una estructura que alinea los datos para que se muestren de manera
+           adecuada.
 
            Ejemplo:
            3 4 5 6 7 8
@@ -62,7 +64,16 @@ public class Matriz5x5 {
 
         for(int i=0; i<matriz.length; i++){
             for(int j = 0; j<matriz.length; j++){
+                if(matriz[i][j]>=0){
+                    toString += " ";
+                }
+                if(matriz[i][j]<=9 || matriz[i][j] >= -9){
+                    toString += " ";
+                }
                 toString += matriz[i][j] + " ";
+                if (matriz[i][j] <= 9 || matriz[i][j] >= -9) {
+                    toString += " ";
+                }
             }
             toString += "\n";
         }
