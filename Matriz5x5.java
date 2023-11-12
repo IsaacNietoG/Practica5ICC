@@ -45,6 +45,31 @@ public class Matriz5x5 {
         matriz = input;
     }
 
+    public String toString(){
+        /**
+           Retorna una String de varias lineas que representa la matriz.
+
+           Ejemplo:
+           3 4 5 6 7 8
+           3 5 6 7 8 9
+           4 4 4 4 4 4
+           4 4 4 4 4 4
+           4 4 4 4 4 4
+
+           Esto para una mejor representacion al usuario.
+         */
+        String toString = "";
+
+        for(int i=0; i<matriz.length; i++){
+            for(int j = 0; i<matriz.length; j++){
+                toString += matriz[i][j] + " ";
+            }
+            toString += "\n";
+        }
+
+        return toString;
+    }
+
     public static Matriz5x5 sumaMatrices(Matriz5x5 sumando1, Matriz5x5 sumando2){
         /**
            Suma dos matrices de 5x5.
@@ -108,3 +133,5 @@ public class Matriz5x5 {
     }
 
 }
+
+
