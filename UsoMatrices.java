@@ -3,6 +3,15 @@ import java.util.Scanner;
 public class UsoMatrices {
     
     public static void main(String[] args){
+        /**
+           La interfaz para usar la implemetacion de matrices solicitada en la Practica.
+        
+           Implementa una nueva estructura para recibir entradas del usuario que aprovecha
+           el manejo de excepciones de Java. Asi mismo, para mayor facilidad de lectura
+           implemento metodos atomicos para cada una de las opciones. Asi, en este metodo
+           solamente queda la estructura básica que llamará a los demás métodos corresp-
+           ondientes.
+         */
         boolean repetir = true;
         int choice = 0;
         Scanner input = new Scanner(System.in);
@@ -22,7 +31,7 @@ public class UsoMatrices {
             }
             switch(choice){
             case 1:
-                
+                sumador();
                 break;
             case 2:
                 break;
@@ -37,5 +46,21 @@ public class UsoMatrices {
                 repetir = true;
             }
         }while(repetir);
+    }
+
+    public static void sumador(){
+        Matriz5x5 sumando1 = new Matriz5x5(1);
+        Matriz5x5 sumando2 = new Matriz5x5(1);
+
+        System.out.println("---Matrices a sumar---");
+        System.out.println("");
+        System.out.println(sumando1);
+        System.out.println();
+        System.out.println(sumando2);
+        System.out.println("------------");
+        System.out.println("Resultado:");
+        System.out.println();
+        Matriz5x5 resultado = Matriz5x5.sumaMatrices(sumando1, sumando2);
+        System.out.println(resultado);
     }
 }
