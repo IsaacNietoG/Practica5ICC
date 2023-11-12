@@ -84,4 +84,27 @@ public class Matriz5x5 {
         return resultado;
     }
 
+    public void transponer(){
+        /**
+           Transpone el arreglo interno de la instancia en donde se ejecute. Esto
+           lo logra invirtiendo las coordenadas del arreglo.
+         */
+        int[][] temp = this.matriz;
+        for(int i = 0; i<matriz.length; i++){
+            for(int j = 0; j<matriz.length; j++){
+                matriz[i][j] = temp[j][i];
+            }
+        }
+    }
+
+    public static Matriz5x5 multipMatrices(Matriz5x5 factor1, int factor2){
+        Matriz5x5 resultado = new Matriz5x5(0);
+        for(int i = 0; i<factor1.matriz.length; i++){
+            for(int j = 0; j<factor1.matriz.length; j++){
+                resultado.matriz[i][j] = factor1.matriz[i][j]*factor2;
+            }
+        }
+        return resultado;
+    }
+
 }
