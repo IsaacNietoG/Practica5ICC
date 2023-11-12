@@ -27,6 +27,7 @@ public class UsoMatrices {
             try{
                 choice = input.nextInt();
             } catch (InputMismatchException ex){
+                input.nextLine();
                 choice = 6;
             }
             switch(choice){
@@ -40,6 +41,7 @@ public class UsoMatrices {
             case 4:
                 break;
             case 5:
+                repetir = false;
                 break;
             default:
                 System.out.println("Entrada inválida");
