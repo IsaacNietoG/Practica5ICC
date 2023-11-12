@@ -61,7 +61,7 @@ public class Matriz5x5 {
         String toString = "";
 
         for(int i=0; i<matriz.length; i++){
-            for(int j = 0; i<matriz.length; j++){
+            for(int j = 0; j<matriz.length; j++){
                 toString += matriz[i][j] + " ";
             }
             toString += "\n";
