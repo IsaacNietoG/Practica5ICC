@@ -42,6 +42,7 @@ public class UsoMatrices {
                 transponedor();
                 break;
             case 4:
+                multiplicadorEscalar();
                 break;
             case 5:
                 repetir = false;
@@ -103,6 +104,17 @@ public class UsoMatrices {
         Matriz5x5 matriz5x5 = new Matriz5x5(1);
         Random random = new Random();
         int escalar = random.nextInt(4)+3;
+
+        System.out.println("---Matriz a multiplicar---");
+        System.out.println("");
+        System.out.println(matriz5x5);
+        System.out.println();
+        System.out.println("Escalar a multiplicar: "+escalar);
+        System.out.println("-----------");
+        System.out.println("Resultado");
+        System.out.println();
+        Matriz5x5 resultado = Matriz5x5.multipMatrices(matriz5x5, escalar);
+        System.out.println(resultado);
     }
 
 }
