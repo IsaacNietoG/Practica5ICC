@@ -5,24 +5,6 @@
  * - Terminar la clase UsoMatrices
  * - Terminar la clase UsoSudoku
  * 
- * UsoMatrices:
- * - Crear el menu con las opciones:
- * 1. Sumar matrices
- * 2. Multiplicar matrices
- * 3. Transpuesta de una matriz
- * 4. Multiplicar matriz por un escalar.
- * - Crear el metodo sumaDeMatrices() que generará dos matrices aleatorizadas,
- * las sumará con sumaMatrices y
- * las mostrará al usuario.
- * - Crear el metodo multipDeMatrices() que generará dos matrices aleatorizadas,
- * las multiplicará con multipMatrices
- * y las mostrará al usuario.
- * - Crear el metodo transponedor() que generará una matriz, la transpondrá y
- * las mostrará al usuario
- * - Crear el metodo matrizXEscalar() que generará una matriz y un escalar (int
- * de 3 a 6) y los multiplicará. Luego
- * mostrará al usuario.
- * 
  * Sudoku:
  * - Crear un constructor que recibirá un arreglo int[9][9] y lo guardará como
  * su arreglo interno
