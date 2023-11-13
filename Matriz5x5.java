@@ -67,13 +67,13 @@ public class Matriz5x5 {
                 if(matriz[i][j]>=0){
                     toString += " ";
                 }
-                if(matriz[i][j]<=9 || matriz[i][j] >= -9){
+                if((matriz[i][j] <= 9 && matriz[i][j] >=0) || (matriz[i][j] >= -9 && matriz[i][j] <= 0)){
                     toString += " ";
                 }
-                toString += matriz[i][j] + " ";
-                if (matriz[i][j] <= 9 || matriz[i][j] >= -9) {
+                if((matriz[i][j]<= 99 && matriz[i][j] >=0) || (matriz[i][j] >= -99 & matriz[i][j] <= 0)){
                     toString += " ";
                 }
+                toString += " " + matriz[i][j] + " ";
             }
             toString += "\n";
         }
