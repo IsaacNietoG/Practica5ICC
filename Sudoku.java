@@ -1,11 +1,10 @@
+import java.lang.Math;
 public class Sudoku {
 
     int[][] sudoku = new int[9][9];
 
-    public Sudoku(int[][] input) throws entradaInvalidaException {
-        if (input.length > 9 || input[0].length > 9) {
-            throw new entradaInvalidaException("");
-        }
+    public Sudoku(int[][] input){
+        sudoku = input;
     }
 
     public boolean verificarCompleto() {
