@@ -12,7 +12,7 @@ public class Sudoku {
         boolean columnasBien = checkColumnas();
         boolean cuadrantesBien = true;
 
-        for (int i = 0; i <= 9; i++) {
+        for (int i = 1; i <= 9; i++) {
             if (!checkCuadrante(i)) {
                 cuadrantesBien = false;
                 break;
@@ -52,15 +52,15 @@ public class Sudoku {
     }
 
     protected boolean checkCuadrante(int cuadrante) {
-        int centroX = 2 + 3 * ((cuadrante - 1) % 3);
-        int centroY = 2 + 3 * ((cuadrante - 1) / 3);
+        int centroX = 1 + 3 * ((cuadrante - 1) % 3);
+        int centroY = 1 + 3 * ((cuadrante -1)/3);
 
-        int[] cuadranteList = { sudoku[centroX - 1][centroY - 1], sudoku[centroX - 1][centroY],
+        int[] cuadranteList = {sudoku[centroX - 1][centroY - 1], sudoku[centroX - 1][centroY],
                 sudoku[centroX - 1][centroY + 1], sudoku[centroX][centroY - 1], sudoku[centroX][centroY],
                 sudoku[centroX][centroY + 1], sudoku[centroX + 1][centroY - 1], sudoku[centroX + 1][centroY],
                 sudoku[centroX + 1][centroY + 1] };
-        for(int i = 0; i<cuadranteList.length; i++){
-            for(int j= i+1;i<cuadranteList.length; j++){
+        for(int i = 0; i<cuadranteList.length-1; i++){
+            for(int j= i+1;j<cuadranteList.length; j++){
                 if(cuadranteList[i]==cuadranteList[j]){
                     return false;
                 }
