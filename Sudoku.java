@@ -68,4 +68,21 @@ public class Sudoku {
         }
         return true;
     }
+
+    public String toString(){
+        String toString = "";
+        for (int i = 0; i < sudoku.length; i++){
+            for(int j = 0; j< sudoku[0].length; j++){
+                toString += " " + sudoku[i][j] + " ";
+                if((j+1) % 3==0){
+                    toString += "|";
+                }
+            }
+            toString += "\n";
+            if ((i+1) % 3 == 0) {
+                toString += "--------------------------\n";
+            }
+        }
+        return toString;
+    }
 }
